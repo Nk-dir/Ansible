@@ -5,5 +5,5 @@
     name : shutdown ubuntu
     ansible.builtin.command: /bin/shutdown -t now
       when :
-        ansible_facts["os.family"] == "Debian"
+        ansible_facts["os_family"] == "Debian"
 
